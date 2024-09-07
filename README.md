@@ -1,12 +1,4 @@
-## Singh, Bhanu Pratap  22201990
-
-## Galani, Rohit   22209032
-
 **Student Advisor Rasa ChatBot**
-
-[Link to MyGit repository](https://mygit.th-deg.de/rg11032/rasa-chatbot.git)
-
-[Link to Wiki repository in MyGit](https://mygit.th-deg.de/rg11032/rasa-chatbot/-/wikis/home)
 
 # Project Description
 
@@ -90,18 +82,3 @@ This Rasa chatbot project comprises a **Flask API** (`app.py`) providing study f
 
 The chatbot processes user messages through Rasa NLU, determines actions via Rasa Core using stories and rules, and executes custom actions as needed.
 
-# Work done
-
-## Bhanu Pratap Singh : (22201990)
-
-1) User and System Personas 
-2) Example dialogs
-3) Implementation yml-files (domain, data/nlu)
-4) Implementation actions.py
-
-## Rohit Galani : (22209032)
-
-1) Use cases 
-2) Dialog flow
-3) Implementation yml-files (data/stories data/rules)
-4) Implementation actions.py

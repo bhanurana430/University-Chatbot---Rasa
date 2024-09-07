@@ -1,0 +1,159 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+- story: your study options 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: study_options
+  - action: action_study_options
+  - action: utter_ask_study_option
+  - intent: selected_field
+  - action: utter_study_options
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+ 
+
+
+
+- story: essential fact deadline
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deadline
+  - action: utter_deadline
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+
+
+- story: language requirement
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: lang_req
+  - action: utter_lang_req
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+
+
+
+- story: step by step application procedure
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: application_procedure
+  - action: utter_process
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+- story: enroll process
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: enroll
+  - action: utter_enroll
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+# - story: admission
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: application_procedure
+#   - action: utter_process
+#   - intent: enroll
+#   - action: utter_enroll
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_sorry
+
+- story: university contact
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact
+  - action: utter_contact
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: advice and support
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: advice
+  - action: utter_advice
+  - action: utter_ask_faq
+  - intent: ask_faq
+  - action: utter_faq
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+
+- story: study begin
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: begin
+  - action: utter_ask_semester
+  - intent: selected_semester
+  - action: action_begin
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+
+
+
+- story: internship
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: internship
+  - action: utter_ask_field
+  - intent: selected_field
+  - action: utter_internship
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+
+
+
+

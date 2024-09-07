@@ -1,0 +1,111 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - study_options
+  - selected_field
+  - deadline
+  - lang_req
+  - application_procedure
+  - contact
+  - advice
+  - enroll
+  - begin
+  - selected_semester
+  - ask_faq
+  - internship
+
+
+
+
+actions:
+  
+  - action_study_options
+  - action_begin
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_study_option:
+  - text: "These are all the available study options, please choose one of them"
+  
+  
+  utter_study_options:
+  - text: " This link will help you to get more information about the courses available at THD : https://www.th-deg.de/en/study-with-us/course-choices/study-fields "
+
+  utter_deadline:
+  - text: "The following application deadlines generally apply for a full degree programme: Winter semester (entry in October): 15 April - 15 July,
+  The following application deadlines generally apply for a full degree programme: Summer semester (entry in March): 15 November - 15 January"
+
+  utter_lang_req:
+  - text: "Here is the pdf link for language requirements for all the courses in campus Deggendorf: https://www.th-deg.de/Studieninteressierte/Bewerbung/language_requirements_German-English_DEG.pdf 
+
+  Here is the pdf link for language requirements for all the courses in campus Cham: https://www.th-deg.de/Studieninteressierte/Bewerbung/language_requirements_German-English_CHAM.pdf
+
+  Here is the pdf link for language requirements for all the courses in European campus Rottal Inn: https://www.th-deg.de/Studieninteressierte/Bewerbung/language_requirements_German-English_ECRI.pdf "
+
+  
+  utter_process:
+  - text: "Here is the step by step procedure for the application: https://www.th-deg.de/en/apply"
+
+  utter_sorry:
+  - text: "Sorry for the inconvience caused, Maybe try asking a different question"
+
+  utter_enroll:
+  - text: "Here is the step by step procedure for the enrollment: https://www.th-deg.de/en/apply#enrolment"
+
+  utter_contact:
+  - text: "If you have any questions about the application process, feel free to check out our FAQ page. If your question is not answered on that page, please contact us via mail at bewerbung@th-deg.de or message the relevant person from the centre for studies of your degree programme."
+
+  utter_advice:
+  - text: "This is the link to our advice and support page: https://www.th-deg.de/en/advice"
+
+  utter_ask_faq:
+  - text: "You can ask for FAQ page, this might answer your queries."
+
+  utter_faq:
+  - text: "Here you go: https://www.th-deg.de/en/study-with-us/advice-support/faq-potentials"
+
+  utter_ask_semester:
+  - text: "For which semester(summer/winter) do you want the deadline?"
+
+  utter_ask_field:
+  - text: "Yaa sure, In which field would you like to apply for an internship?"
+  utter_internship:
+  - text: "Great, this link will help you know more about internship for your course https://www.th-deg.de"
+
+  
+
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

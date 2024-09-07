@@ -1,0 +1,338 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: study_options
+  examples: |
+    - study options
+    - give me some study program options
+    - Courses
+    - Subjects
+    - Modules
+    - Classwork
+    - Syllabus
+    - Academic Programs
+    - Degree Options
+    - Course Offerings
+    - Majors and Minors
+    - What courses can I take next semester?
+    - Tell me about the subjects in this program.
+    - What do you mean by classwork modules?
+    - Can I see the syllabus for this class?
+    - Are there different academic programs to choose from?
+    - What degree options do I have?
+    - What are the available courses for my major?
+    - Can I learn about majors and minors?
+    - Tell me more about the academic programs.
+    - What specializations are offered in this field?
+
+- intent: selected_field
+  examples: |
+    - AI
+    - Artificial Intelligence
+    - Healthcare Sciences
+    - Informatics
+    - Design and Media
+    - Electrical Engineering and Information Technology
+    - Mechanical Engineering and Mechatronics
+    - Economics
+    - Extra-occupational Degrees
+    - Computer Science
+    - Engineering
+    - Business Administration
+    - Psychology
+    - Biology
+    - Chemistry
+    - Physics
+    - Mathematics
+    - Economics
+    - Political Science
+    - History
+    - English Literature
+
+- intent: deadline
+  examples: |
+    - deadline
+    - when is the dealine?
+    - Due date
+    - Submission deadline
+    - Cut-off date
+    - Closing date
+    - Application deadline
+    - Expiry date
+    - Time limit
+    - End date
+    - Final date
+    - Last day
+    - When is the deadline for submitting my application?
+    - Could you please provide information on the submission deadline?
+    - When do I need to have my documents submitted by?
+    - Is there a specific deadline for completing the application process?
+    - What's the cutoff date for applications?
+    - When is the closing date for admissions?
+
+
+
+- intent: lang_req
+  examples: |
+    - Language requirements
+    - Linguistic prerequisites
+    - Language proficiency
+    - Required language skills
+    - Communication language
+    - Linguistic qualifications
+    - Language criteria
+    - Speaking requirements
+    - Language proficiency standards
+    - Communication competency
+    - Are there any language requirements for this program?
+    - What level of language proficiency is expected for admission?
+    - Are language qualifications necessary to enroll in specific courses?
+    - Can you provide information on the language prerequisites for this degree?
+    - Are there specific language criteria I need to meet for this academic program?
+
+
+- intent: application_procedure
+  examples: |
+    - Application procedure
+    - what is the application procedure
+    - Application process
+    - How to apply
+    - Submission steps
+    - Application guidelines
+    - Procedures for application
+    - Could you outline the application procedure for this program?
+    - What are the steps involved in the application process?
+    - Can you provide details on how to apply for admission?
+    - What are the submission steps for the application materials?
+    - Are there specific enrollment steps I need to follow?
+
+
+
+
+- intent: contact
+  examples: |
+    - Reach us
+    - Contact point
+    - Drop a line
+    - Speak to someone
+    - Reach the office
+    - Send an email
+    - Ask for assistance
+    - Connect with
+    - Request information
+    - Seek clarification
+    - Communication channels
+    - Who to contact
+    - Contact form
+    - contact 
+    - Contact information
+    - Get in touch
+    - Reach out
+    - Contact details
+    - Contact us
+    - Ask a question
+    - Can you provide the contact information for the admissions office?
+    - How can I get in touch with the department for further details?
+    - What are the contact details for the academic advising office?
+    - Is there a specific person I should reach out to with my questions?
+
+- intent: advice
+  examples: |
+    - Advice
+    - Support
+    - Guidance
+    - Assistance
+    - Help
+    - Counsel
+    - Give me some advice and support
+    - Where can I seek advice and support for academic concerns?
+    - Is there a specific office that provides guidance and assistance to students?
+    - How can I access mentorship or counseling services for academic challenges?
+    - Where do students go for academic support and advice on campus?
+
+- intent: enroll
+  examples: |
+    - Enrollment
+    - How to enroll?
+    - What is the enrollment procedure?
+    - Registration
+    - Admission
+    - Enroll
+    - Apply
+    - Registration process
+    - Sign up
+    - How do I begin the enrollment process for this program?
+    - Can you guide me on how to enroll in the courses for the upcoming semester?
+    - What are the steps to complete the registration for this academic term?
+    - Where can I apply for admission to the university?
+
+- intent: begin
+  examples: |
+    - When is the term kickoff?
+    - What's the initiation date for the academic year?
+    - Can you tell me the official launch date for this semester?
+    - When is the academic year's start day?
+    - Could you provide details on the semester's commencement?
+    - What's the academic year's kick-off date?
+    - When does the new term officially begin?
+    - Start date
+    - Commencement
+    - Begin date
+    - Term start
+    - Academic year start
+    - Opening day
+    - Semester start
+    - Academic year start
+    - Opening day
+    - Semester start
+    - Start day
+    - Launch date
+    - Kick-off
+    - Inception
+    - When is the start date for the upcoming academic term?
+    - Can you provide information on when the study will commence for this program?
+    - When does the academic year officially begin?
+    - What is the opening day for the semester?
+
+- intent: selected_semester
+  examples: |
+    - summer 
+    - winter 
+    - fall
+    - spring
+  
+  
+
+- intent: ask_faq
+  examples: | 
+    - FAQ
+    - Frequently Asked Questions
+    - Common queries
+    - Help center
+    - Clarification
+    - Common concerns
+    - Information hub
+    - Queries
+    - Can you direct me to the FAQ section on your website?
+    - Where can I find answers to frequently asked questions?
+    - Are there any common queries addressed in your FAQ?
+    - Could you provide a link to your FAQ page?
+    - Is there an FAQ section that covers basic information?
+
+
+
+- intent: internship
+  examples: |
+    - Intern
+    - Apprenticeship
+    - Trainee
+    - Placement
+    - Work Experience
+    - Learning Opportunity
+    - Hands-on Training
+    - Professional Development
+    - Mentorship
+    - Skill-building
+    - Entry-level
+    - Career Development
+    - Is there information available about internships?
+    - Could you provide details about internship opportunities?
+    - Where can I find information on available internships?
+    - I'm interested in internships; where should I look for more details?
+    - Can you guide me on how to get information on internships?
+    - I'm seeking information about internship programs. Any leads?
+    - How can I learn more about internship opportunities in this field?
+    - Are there specific websites or resources for internship information?
+    - I'd like to know more about internships. Where can I find relevant information?
+    - Could you share insights on the current internship opportunities?
+
+
